@@ -1,0 +1,11 @@
+method_a,method_b,median_daily_difference_hours,wilcoxon_statistic,p_value,p_value_holm
+Teacher,FRAME,-36.0,0.0,0.015625,0.15625
+Teacher,Autoencoder,37.875,0.0,0.015625,0.15625
+Teacher,Pixel,24.0,8.0,0.375,1.0
+Teacher,SSIM,-48.75,8.0,0.375,1.0
+FRAME,Autoencoder,62.625,0.0,0.015625,0.15625
+FRAME,Pixel,48.75,1.0,0.03125,0.21875
+FRAME,SSIM,19.125,8.0,0.375,1.0
+Autoencoder,Pixel,-13.875,14.0,1.0,1.0
+Autoencoder,SSIM,-78.0,1.0,0.03125,0.21875
+Pixel,SSIM,-72.75,5.0,0.15625,0.78125
