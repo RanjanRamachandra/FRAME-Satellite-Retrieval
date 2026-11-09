@@ -1,0 +1,5 @@
+metric,value_percent
+Original vs V4 masked Top-1 agreement,36.36363636363637
+V4 full vs V4 masked Top-1 agreement,18.181818181818183
+Original vs V4 masked Top-5 overlap,41.81818181818182
+V4 full vs V4 masked Top-5 overlap,49.09090909090909

@@ -1,0 +1,17 @@
+{
+    "B07": {
+        "mean_kelvin": 273.09522190542316,
+        "std_kelvin": 21.189746928152985,
+        "valid_pixel_count": 111985892
+    },
+    "B08": {
+        "mean_kelvin": 233.3562413452263,
+        "std_kelvin": 8.595830183347212,
+        "valid_pixel_count": 111994175
+    },
+    "B13": {
+        "mean_kelvin": 266.6357553079173,
+        "std_kelvin": 21.548179300301857,
+        "valid_pixel_count": 111994176
+    }
+}

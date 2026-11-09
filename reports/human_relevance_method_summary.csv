@@ -1,0 +1,5 @@
+method,queries,top5_entries,judged_entries,unique_judged_candidates,mean_human_rating
+FRAME,11,55,55,28,1.0
+Pixel,11,55,55,23,1.0
+SSIM,11,55,55,28,1.0
+Teacher,11,55,55,29,1.0

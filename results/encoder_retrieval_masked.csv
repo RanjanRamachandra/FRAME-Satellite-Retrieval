@@ -1,0 +1,12 @@
+query,top1,top5
+himawari_asia_20220120_1500.npz,himawari_asia_20220119_1200.npz,himawari_asia_20220119_1200.npz | himawari_asia_20220118_2100.npz | himawari_asia_20220119_1500.npz | himawari_asia_20220120_1200.npz | himawari_asia_20220117_1800.npz
+himawari_asia_20220120_1800.npz,himawari_asia_20220119_1800.npz,himawari_asia_20220119_1800.npz | himawari_asia_20220118_1500.npz | himawari_asia_20220119_1500.npz | himawari_asia_20220118_1800.npz | himawari_asia_20220118_2100.npz
+himawari_asia_20220120_2100.npz,himawari_asia_20220117_1200.npz,himawari_asia_20220117_1200.npz | himawari_asia_20220117_2100.npz | himawari_asia_20220117_1500.npz | himawari_asia_20220118_1200.npz | himawari_asia_20220119_2100.npz
+himawari_asia_20220121_0000.npz,himawari_asia_20220120_0900.npz,himawari_asia_20220120_0900.npz | himawari_asia_20220119_0900.npz | himawari_asia_20220117_0900.npz | himawari_asia_20220118_0900.npz | himawari_asia_20220117_0000.npz
+himawari_asia_20220121_0300.npz,himawari_asia_20220118_0300.npz,himawari_asia_20220118_0300.npz | himawari_asia_20220120_0300.npz | himawari_asia_20220115_0300.npz | himawari_asia_20220117_0300.npz | himawari_asia_20220116_0300.npz
+himawari_asia_20220121_0600.npz,himawari_asia_20220115_0600.npz,himawari_asia_20220115_0600.npz | himawari_asia_20220119_0600.npz | himawari_asia_20220120_0600.npz | himawari_asia_20220117_0600.npz | himawari_asia_20220116_0600.npz
+himawari_asia_20220121_0900.npz,himawari_asia_20220117_0900.npz,himawari_asia_20220117_0900.npz | himawari_asia_20220119_0900.npz | himawari_asia_20220118_0900.npz | himawari_asia_20220120_0900.npz | himawari_asia_20220117_0000.npz
+himawari_asia_20220121_1200.npz,himawari_asia_20220117_1200.npz,himawari_asia_20220117_1200.npz | himawari_asia_20220117_2100.npz | himawari_asia_20220117_1500.npz | himawari_asia_20220118_1200.npz | himawari_asia_20220119_2100.npz
+himawari_asia_20220121_1500.npz,himawari_asia_20220117_1200.npz,himawari_asia_20220117_1200.npz | himawari_asia_20220117_2100.npz | himawari_asia_20220117_1500.npz | himawari_asia_20220118_1200.npz | himawari_asia_20220119_2100.npz
+himawari_asia_20220121_1800.npz,himawari_asia_20220117_1200.npz,himawari_asia_20220117_1200.npz | himawari_asia_20220117_1500.npz | himawari_asia_20220117_2100.npz | himawari_asia_20220118_1200.npz | himawari_asia_20220117_1800.npz
+himawari_asia_20220121_2100.npz,himawari_asia_20220116_1800.npz,himawari_asia_20220116_1800.npz | himawari_asia_20220119_2100.npz | himawari_asia_20220116_1500.npz | himawari_asia_20220115_1800.npz | himawari_asia_20220117_2100.npz

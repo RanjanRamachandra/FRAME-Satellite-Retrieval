@@ -1,0 +1,48 @@
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Satellite raw and processed data
+data/raw/
+data/processed/
+data/expanded_2022/raw/
+data/expanded_2022/processed/
+data/expanded_2022/npz/
+
+# Model checkpoints
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Large downloaded archives
+*.bz2
+*.DAT
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*.bak
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local archives and editor backups
+frame_python_scripts.zip
+*.backup
+*.save
+
+# Generated visual review images
+results/expanded_2022/blind_review/*.png
+
+# Generated result visualisations
+results/*.png
