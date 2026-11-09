@@ -382,3 +382,56 @@ https://registry.opendata.aws/noaa-himawari/
 Himawari-8 is operated by the Japan Meteorological Agency (JMA).
 
 This project is an independent research implementation and should not be interpreted as an official implementation of the original paper.
+
+
+---
+
+## Research Architecture
+
+The following diagram illustrates the complete FRAME research workflow, from satellite data acquisition through independent retrieval evaluation.
+
+```mermaid
+flowchart TD
+    A["NOAA Himawari-8 Archive"] --> B["HSD Satellite Data"]
+    B --> C["Decompression and Band Validation"]
+    C --> D["Satpy Processing"]
+    D --> E["Asia Region Crop: B07, B08, B13"]
+    E --> F["NPZ Dataset: 224 Observations"]
+    F --> G["Chronological Split"]
+
+    G --> H["Training: 112"]
+    G --> I["Validation: 56"]
+    G --> J["Final Test: 56"]
+
+    H --> K["Training Normalization Statistics"]
+    K --> L["Expanded Dataset Loader: 200x200"]
+
+    L --> M["Full-Image Autoencoder"]
+    L --> N["Masked-Image Teacher"]
+
+    M --> O["Pretrained Original Encoder"]
+    N --> P["Pretrained Teacher Encoder"]
+
+    O --> Q["FRAME Model"]
+    P --> Q
+    Q --> R["Trainable Projection Head"]
+
+    J --> S["Independent Test Queries"]
+    S --> T["Deterministic Masking"]
+
+    T --> U["FRAME"]
+    T --> V["Teacher"]
+    T --> W["Autoencoder"]
+    T --> X["Pixel"]
+    T --> Y["SSIM"]
+
+    U --> Z["Top-1 / Top-5 Evaluation"]
+    V --> Z
+    W --> Z
+    X --> Z
+    Y --> Z
+
+    Z --> AA["Pairwise Comparison"]
+    AA --> AB["Human Visual Review"]
+    AB --> AC["Final Research Report"]
+```
