@@ -435,3 +435,29 @@ flowchart TD
     AA --> AB["Human Visual Review"]
     AB --> AC["Final Research Report"]
 ```
+
+---
+
+## Final-Test Research Results
+
+The retrieval evaluation uses 56 independent test queries from January 22–28, 2022, against a database of 112 training observations.
+
+The following visualizations summarize retrieval diversity, pairwise method agreement, Top-5 overlap, and temporal separation.
+
+### 1. Unique Top-1 Matches
+
+![Unique Top-1 Matches](results/expanded_2022/figures/01_unique_top1_matches.png)
+
+### 2. Pairwise Top-1 Agreement
+
+![Pairwise Top-1 Agreement](results/expanded_2022/figures/02_pairwise_top1_agreement.png)
+
+### 3. Pairwise Top-5 Overlap
+
+![Pairwise Top-5 Overlap](results/expanded_2022/figures/03_pairwise_top5_overlap.png)
+
+### 4. Temporal Separation
+
+![Temporal Separation](results/expanded_2022/figures/04_temporal_separation.png)
+
+**Interpretation:** These metrics describe retrieval diversity, ranking agreement, and temporal characteristics. They do not establish semantic relevance or prove that one retrieval method is superior.
