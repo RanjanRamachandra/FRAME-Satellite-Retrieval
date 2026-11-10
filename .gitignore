@@ -46,3 +46,6 @@ results/expanded_2022/blind_review/*.png
 
 # Generated result visualisations
 results/*.png
+
+# Large result files (>1MB) — regenerate by running evaluate_expanded_final_test.py
+results/expanded_2022/final_test_rankings.csv

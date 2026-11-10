@@ -1,3 +1,31 @@
+"""
+Statistical validation for FRAME satellite retrieval experiment.
+
+IMPORTANT — STATISTICAL POWER AND INTERPRETATION NOTICE
+--------------------------------------------------------
+This analysis uses 7 daily clusters (one per test day, January 22-28).
+
+Bootstrap confidence intervals:
+  - 7 clusters is well below the ~30 recommended for stable bootstrap CIs.
+  - Intervals should be treated as EXPLORATORY and ILLUSTRATIVE only.
+
+Paired Wilcoxon signed-rank tests:
+  - n=7 gives very limited power. Only very large effects are detectable.
+  - Non-significant results do NOT mean methods are equivalent.
+  - The smallest Holm-adjusted p-value in this experiment was 0.1562.
+  - No pairwise temporal difference was statistically significant at p < 0.05.
+
+Wilson confidence intervals (Top-1 agreement):
+  - Computed treating each of the 56 query pairs as independent.
+  - Queries within the same day may be correlated (same weather system).
+  - These intervals may be OPTIMISTIC (too narrow).
+  - They should be treated as approximate/illustrative only.
+
+All findings should be labelled as EXPLORATORY until a larger,
+multi-month, multi-region dataset with ground-truth relevance labels
+is available.
+"""
+
 from pathlib import Path
 from itertools import combinations
 
@@ -141,6 +169,10 @@ tests["p_value_holm"] = holm
 
 # --------------------------------------------------
 # 3. Wilson confidence intervals for Top-1 agreement
+# NOTE: These intervals assume individual query independence.
+# Queries within the same day may be correlated (same weather system),
+# so these intervals may be optimistic (too narrow).
+# Treat as approximate/illustrative only.
 # --------------------------------------------------
 
 agreement_results = []

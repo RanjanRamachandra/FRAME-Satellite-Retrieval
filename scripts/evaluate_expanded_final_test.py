@@ -1,3 +1,26 @@
+"""
+Final test evaluation for FRAME satellite retrieval experiment.
+
+EVALUATION DESIGN
+-----------------
+- Database: 112 training observations (January 1-14, 2022).
+- Queries:  56 final-test observations (January 22-28, 2022).
+- Validation observations (January 15-21) are NOT loaded here.
+- No test query appears in the training database.
+
+INTERPRETATION NOTES
+--------------------
+- Temporal separation: larger values mean the retrieved scene is farther
+  back in time. This is NOT equivalent to better or more relevant retrieval.
+- Unique Top-1 matches: measures retrieval diversity, not correctness.
+- Top-1 agreement: measures whether two methods agree, not which is right.
+- Top-5 overlap: measures shared candidates, not relevance.
+- FRAME training loss (cosine): measures imitation of the teacher embedding.
+  It is NOT Precision@K, Recall@K, NDCG, or a human relevance score.
+
+No method-superiority claim is justified by these outputs alone.
+"""
+
 import os
 import random
 import numpy as np

@@ -42,6 +42,8 @@ Metrics:
 - Top-1 temporal separation.
 - Pairwise Top-5 overlap.
 
+> **Power warning:** Seven clusters is well below the ~30 recommended for stable bootstrap confidence intervals. These intervals are exploratory and illustrative only.
+
 ### 3.2 Paired Wilcoxon signed-rank tests
 
 Paired comparisons were performed using seven daily average temporal-separation values.
@@ -50,11 +52,21 @@ All ten method combinations were tested.
 
 Holm correction was applied to control the family-wise error rate.
 
+> **Power warning:** With n=7 pairs, the Wilcoxon test can detect only very large effect sizes. Non-significant results do not mean the methods are equivalent — the test simply lacks power to detect small or moderate differences.
+
 ### 3.3 Wilson confidence intervals
 
 Wilson 95% confidence intervals were calculated for pairwise Top-1 agreement proportions.
 
-These intervals use individual queries and do not account for possible within-day dependence.
+These intervals use individual queries and **do not** account for possible within-day correlation. Same-day queries may share similar atmospheric patterns, making them non-independent. These intervals should be treated as **approximate and potentially optimistic** (too narrow).
+
+### 3.4 Statistical power summary
+
+| Test | Clusters / n | Minimum recommended | Conclusion |
+|---|---:|---:|---|
+| Bootstrap CI | 7 daily clusters | ~30 | Intervals are illustrative only |
+| Paired Wilcoxon | 7 pairs | ~20 | Very low power; non-significance expected |
+| Wilson CI | 56 queries | — | May understate uncertainty (within-day correlation) |
 
 ## 4. Temporal Separation Results
 
@@ -68,7 +80,7 @@ These intervals use individual queries and do not account for possible within-da
 
 FRAME produced the highest observed mean temporal separation.
 
-This is a temporal retrieval characteristic, not evidence of improved semantic relevance.
+> **Important:** A larger temporal separation value does **not** mean better retrieval. It means FRAME tends to retrieve scenes that are farther back in time. This could reflect genuinely different learned patterns, or it could mean FRAME performs differently from the other methods for unrelated reasons. Temporal distance is not equivalent to meteorological or semantic relevance. No pairwise temporal difference was statistically significant after Holm correction.
 
 ## 5. Paired Statistical Tests
 

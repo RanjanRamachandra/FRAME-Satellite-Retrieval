@@ -174,7 +174,7 @@ Absolute time difference between each test query and its top-1 retrieved trainin
 
 FRAME had the largest mean and median temporal separation.
 
-Temporal separation is not equivalent to meteorological relevance. These results indicate different retrieval behaviour, not superiority.
+> **Important:** A larger temporal separation value does **not** mean better retrieval. It means FRAME tends to retrieve scenes that are farther back in time. This is not equivalent to meteorological or semantic relevance. No pairwise temporal difference was statistically significant after Holm correction (minimum adjusted p-value: 0.1562, using 7 daily clusters with limited power).
 
 ## 7. Human visual relevance evaluation
 
@@ -208,9 +208,9 @@ All 250 images received a score of 2.
 
 The ratings were manually entered and passed structural validation.
 
-This evaluation did not discriminate between methods. It should not be interpreted as proof that all methods have equal retrieval quality.
+> **This evaluation produced no discriminative data.** Identical ratings across all 250 candidates mean the pilot rubric, task design, or single-annotator protocol failed to separate methods from each other. These ratings cannot be used as evidence for or against any method's retrieval quality. The pilot must be redesigned before visual evaluation is claimed.
 
-The single-annotator assessment and lack of rating variation are important limitations.
+The single-annotator assessment and complete lack of rating variation are critical limitations. These scores must be preserved as entered and must not be modified to introduce artificial variation.
 
 ## 8. Reproducibility and integrity audit
 
