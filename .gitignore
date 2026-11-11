@@ -49,3 +49,14 @@ results/*.png
 
 # Large result files (>1MB) — regenerate by running evaluate_expanded_final_test.py
 results/expanded_2022/final_test_rankings.csv
+
+# Ablation experiment outputs (regenerate by running train_ablation_masks.py)
+checkpoints/ablation_masks/
+results/ablation_masks/ablation_retrieval_rankings.csv
+
+# Improved visual review images (regenerate by running create_improved_visual_review.py)
+results/expanded_2022/improved_review/*.png
+results/expanded_2022/improved_review/annotator_*/
+
+# Annotation files — committed individually by each annotator
+# results/expanded_2022/annotations/ is intentionally NOT ignored
