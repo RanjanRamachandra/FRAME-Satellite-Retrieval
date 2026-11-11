@@ -93,8 +93,8 @@ import json
 if STATS_FILE.exists():
     with open(STATS_FILE) as f:
         stats = json.load(f)
-    means = np.array([stats["B07"]["mean"], stats["B08"]["mean"], stats["B13"]["mean"]])
-    stds = np.array([stats["B07"]["std"], stats["B08"]["std"], stats["B13"]["std"]])
+    means = np.array([stats["B07"]["mean_kelvin"], stats["B08"]["mean_kelvin"], stats["B13"]["mean_kelvin"]])
+    stds = np.array([stats["B07"]["std_kelvin"], stats["B08"]["std_kelvin"], stats["B13"]["std_kelvin"]])
 else:
     # Fallback if stats not available
     means = np.array([273.0952, 233.3562, 266.6358])

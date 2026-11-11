@@ -1,0 +1,11 @@
+comparison,top1_agreement,cluster_ci_lower_95,cluster_ci_upper_95,n_queries,n_clusters,method,note
+Pixel vs SSIM,0.1964,0.0893,0.3036,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+Teacher vs FRAME,0.1429,0.0536,0.2321,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+FRAME vs Autoencoder,0.0893,0.0357,0.1607,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+Teacher vs Autoencoder,0.0536,0.0179,0.1071,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+Teacher vs SSIM,0.0536,0.0,0.125,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+FRAME vs Pixel,0.0357,0.0,0.1071,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+Teacher vs Pixel,0.0179,0.0,0.0536,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+FRAME vs SSIM,0.0179,0.0,0.0536,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+Autoencoder vs Pixel,0.0179,0.0,0.0536,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation
+Autoencoder vs SSIM,0.0179,0.0,0.0536,56,7,cluster-bootstrap (corrected),Clusters by day — corrects within-day correlation

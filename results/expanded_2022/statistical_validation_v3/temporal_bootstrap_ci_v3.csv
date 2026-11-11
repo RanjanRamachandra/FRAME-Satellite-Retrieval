@@ -1,0 +1,6 @@
+method,n_clusters,mean_hours,std_hours,ci_lower_95,ci_upper_95,power_note
+FRAME,7,429.53,64.61,388.82,476.04,EXPLORATORY — only 7 clusters
+SSIM,7,412.28,75.27,362.12,464.78,EXPLORATORY — only 7 clusters
+Teacher,7,387.43,47.7,354.37,419.46,EXPLORATORY — only 7 clusters
+Autoencoder,7,352.44,47.1,320.46,384.21,EXPLORATORY — only 7 clusters
+Pixel,7,351.53,33.2,328.61,373.92,EXPLORATORY — only 7 clusters

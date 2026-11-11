@@ -1,0 +1,11 @@
+method_a,method_b,mean_diff_hours,wilcoxon_p,cohens_d,effect_size,n_clusters,holm_adjusted_p,significant_at_0.05
+Teacher,FRAME,-42.11,0.0156,-1.1764,large,7,0.156,False
+Teacher,Autoencoder,34.98,0.0156,1.2423,large,7,0.1404,False
+FRAME,Autoencoder,77.09,0.0156,2.8349,large,7,0.1248,False
+FRAME,Pixel,78.0,0.0312,1.089,large,7,0.21839999999999998,False
+Autoencoder,SSIM,-59.84,0.0312,-1.3762,large,7,0.18719999999999998,False
+Pixel,SSIM,-60.75,0.1562,-0.7175,medium,7,0.781,False
+Teacher,Pixel,35.89,0.3594,0.5166,medium,7,1.0,False
+Teacher,SSIM,-24.86,0.375,-0.482,small,7,1.0,False
+FRAME,SSIM,17.25,0.375,0.4408,small,7,0.75,False
+Autoencoder,Pixel,0.91,1.0,0.0145,negligible,7,1.0,False

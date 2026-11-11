@@ -1,0 +1,4 @@
+configuration,shape,size,unique_top1,mean_temporal_hours,median_temporal_hours
+square_small,square,small,30,369.21,360.0
+square_medium,square,medium,24,376.82,351.0
+square_large,square,large,26,446.78,456.0

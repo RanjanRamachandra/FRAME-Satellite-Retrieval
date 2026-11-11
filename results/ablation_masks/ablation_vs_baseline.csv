@@ -1,0 +1,4 @@
+configuration,top1_agreement_vs_baseline,mean_top5_overlap_vs_baseline,n_queries
+square_medium,0.2321,1.3571,56
+square_small,0.125,1.3571,56
+square_large,0.0179,0.8571,56

@@ -1,0 +1,5 @@
+test,n_clusters,recommended_min,adequate,conclusion
+Bootstrap CI (temporal),7,30,False,EXPLORATORY — intervals unreliable with 7 clusters
+Paired Wilcoxon,7,20,False,VERY LOW POWER — only large effects detectable
+Paired Permutation,7,20,False,VERY LOW POWER — more robust than Wilcoxon but still limited
+Cluster-bootstrap Top-1 CI,7,20,False,EXPLORATORY — corrects within-day correlation but limited n
