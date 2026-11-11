@@ -1,5 +1,10 @@
 configuration,top1_agreement_vs_baseline,mean_top5_overlap_vs_baseline,n_queries
+circle_large,0.25,1.6071,56
 square_medium,0.2321,1.375,56
+rectangle_medium,0.1964,1.5893,56
+circle_medium,0.1786,1.5714,56
 circle_small,0.1607,1.2857,56
 square_small,0.125,1.3571,56
+rectangle_small,0.0893,1.1429,56
 square_large,0.0357,1.1429,56
+rectangle_large,0.0,0.2679,56

@@ -187,7 +187,7 @@ def apply_mask(image_tensor, mask):
 # --------------------------------------------------
 
 train_dataset = ExpandedHimawariDataset(split="train", image_size=IMAGE_SIZE)
-val_dataset   = ExpandedHimawariDataset(split="val",   image_size=IMAGE_SIZE)
+val_dataset   = ExpandedHimawariDataset(split="validation",   image_size=IMAGE_SIZE)
 
 train_loader = torch.utils.data.DataLoader(
     train_dataset, batch_size=BATCH_SIZE, shuffle=True

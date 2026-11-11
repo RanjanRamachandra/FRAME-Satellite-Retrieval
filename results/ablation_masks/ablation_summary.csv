@@ -1,0 +1,10 @@
+configuration,shape,size,min_side_px,max_side_px,best_val_loss
+square_small,square,small,20,40,0.00050624
+circle_small,circle,small,20,40,0.00056419
+rectangle_small,rectangle,small,20,40,0.00106531
+circle_medium,circle,medium,40,80,0.00107972
+square_medium,square,medium,40,80,0.00157061
+rectangle_medium,rectangle,medium,40,80,0.00353076
+circle_large,circle,large,80,120,0.00470688
+square_large,square,large,80,120,0.00859153
+rectangle_large,rectangle,large,80,120,0.02537426

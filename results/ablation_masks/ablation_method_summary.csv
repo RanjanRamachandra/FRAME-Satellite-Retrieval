@@ -1,5 +1,10 @@
 configuration,shape,size,unique_top1,mean_temporal_hours,median_temporal_hours
 square_small,square,small,30,369.21,360.0
-circle_small,circle,small,22,373.34,358.5
-square_medium,square,medium,24,377.62,351.0
+rectangle_small,rectangle,small,26,372.37,355.5
+square_medium,square,medium,24,376.82,351.0
+circle_small,circle,small,29,379.76,361.5
+circle_large,circle,large,23,389.46,361.5
+circle_medium,circle,medium,28,389.78,358.5
+rectangle_medium,rectangle,medium,26,402.48,400.5
 square_large,square,large,26,426.21,420.0
+rectangle_large,rectangle,large,18,447.48,487.42
