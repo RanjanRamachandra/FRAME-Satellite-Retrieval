@@ -1,0 +1,14 @@
+metric,value
+device,mps
+db_size,112
+queries,56
+frame_total_s,0.3489
+frame_per_query_s,0.00623
+baseline_total_s,19.7056
+baseline_per_query_s,0.351886
+speedup_x,56.48
+time_reduction_pct,98.2
+flops_reduction_pct,99.8
+paper_speedup_x,15.0
+paper_db_size,20595
+paper_device,NVIDIA A100 40GB
